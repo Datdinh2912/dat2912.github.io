@@ -92,7 +92,7 @@ body {
 	display: flex;
 }
 .wrapper .footer a{
-	margin: 20px 20px 0px;
+	margin: 20px 10px 0px;
 	padding: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -122,13 +122,14 @@ body {
 }
 
 .dark-mode {
+	transition-delay: 2s;
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	background-color: rgb(45,10,68);
-	background-image: linear-gradient(-40deg, rgba(45,10,68,1) 0%, rgba(82,18,18,1) 50%, rgba(15,60,83,1) 100%);
+	background-image: linear-gradient(-45deg, #0f205d,#00544e, #6f2546,#57015b);
 }
 .dark-mode .wrapper {
-	background-color: rgba(0,0,0,0.4990371148459384);
+	background-color: rgba(47,47,47,0.6312292358803987);
 }
 .dark-mode .wrapper .mode i{
 	color: #fff;
