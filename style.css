@@ -63,6 +63,14 @@ body {
 	font-size: 60%;
 	text-align: center;
 }
+.wrapper .info .date{
+	margin-bottom: 10px;
+	display: flex;
+}
+.wrapper .info .date p{
+	color: #333333;
+	margin-left: 10px;
+}
 .wrapper .info .job{
 	margin-bottom: 10px;
 	display: flex;
@@ -84,12 +92,12 @@ body {
 	display: flex;
 }
 .wrapper .footer a{
-	margin: 20px;
+	margin: 20px 20px 0px;
 	padding: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
 	border: 2px solid #383838;
-	border-radius: 20px;
+	border-radius: 30px;
 	text-decoration: none;
 	color: #383838;
 
@@ -117,15 +125,18 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	background-color: rgb(45,10,68);
-	background-image: linear-gradient(90deg, rgba(45,10,68,1) 0%, rgba(82,18,18,1) 50%, rgba(15,60,83,1) 100%);
+	background-image: linear-gradient(-40deg, rgba(45,10,68,1) 0%, rgba(82,18,18,1) 50%, rgba(15,60,83,1) 100%);
 }
 .dark-mode .wrapper {
-	background-color: rgba(0,0,0,0.5970763305322129);
+	background-color: rgba(0,0,0,0.4990371148459384);
 }
 .dark-mode .wrapper .mode i{
 	color: #fff;
 }
 .dark-mode .wrapper .info{
+	color: #fff;
+}
+.dark-mode .wrapper .info .date p{
 	color: #fff;
 }
 .dark-mode .wrapper .info .job p{
