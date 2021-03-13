@@ -14,11 +14,19 @@ body {
   	justify-content: center;
 }
 .wrapper{
-	background-color: #fff;
+	background-color: rgba(255,255,255,0.6671043417366946);
 	width: 300px;
 	height: 400px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px #575757;
+}
+.wrapper .mode i{
+	font-size: 130%;
+	margin-top:10px;
+	margin-left: 270px;
+	position: absolute;
+	text-align: right;
+	border: none;
 }
 .wrapper .avatar{
 	margin: 10px;
@@ -43,6 +51,22 @@ body {
 	font-size: 60%;
 	text-align: center;
 }
+.wrapper .info .job{
+	margin-bottom: 10px;
+	display: flex;
+}
+.wrapper .info .job p{
+	color: #333333;
+	margin-left: 10px;
+}
+.wrapper .info .location{
+	margin-bottom: 10px;
+	display: flex;
+}
+.wrapper .info .location p{
+	color: #333333;
+	margin-left: 8px;
+}
 .wrapper .footer{
 	justify-content: center;
 	display: flex;
@@ -59,30 +83,16 @@ body {
 
 }
 .wrapper .footer a:hover{
-	border: 2px solid #c65555;
-	background-color: #c65555;
+	border: 2px solid #4fb0d0;
+	background-color: #4fb0d0;
 	color: #fff;
-}
-.wrapper .info .job{
-	margin-bottom: 10px;
-	display: flex;
-}
-.wrapper .info .job p{
-	color: #333333;
-}
-.wrapper .info .location{
-	margin-bottom: 10px;
-	display: flex;
-}
-.wrapper .info .location p{
-	color: #333333;
 }
 .wrapper .icon{
 	justify-content: center;
 	display: flex;
 }
 .wrapper .icon a{
-	color: #c65555;
+	color: #4fb0d0;
 	text-decoration: none;
 }
 .wrapper .icon a i{
@@ -90,6 +100,47 @@ body {
 	margin: 20px;
 	border:  none;
 }
+
+.dark-mode {
+	background: rgb(47,37,42);
+	background: radial-gradient(circle, rgba(47,37,42,1) 0%, rgba(45,44,44,1) 100%);
+}
+.dark-mode .wrapper {
+	background-color: rgba(71,71,71,0.6671043417366946);
+}
+.dark-mode .wrapper .mode i{
+	background-color: #333333;
+	color: #fff;
+}
+.dark-mode .wrapper .info{
+	color: #fff;
+}
+.dark-mode .wrapper .info .job p{
+	color: #fff;
+}
+.dark-mode .wrapper .info .location p{
+	color: #fff;
+}
+.dark-mode .wrapper .avatar img{
+	border: 5px solid #b86060;
+}
+.dark-mode .wrapper .footer a{
+	border: 2px solid #b4b4b4; 
+	color: #fff;
+}
+.dark-mode .wrapper .footer a:hover{
+	background-color: #c65555;
+	border: 2px solid #c65555;
+}
+.dark-mode .wrapper .icon a{
+	color: #c65555;
+} 
+@media all and (max-width: 220px){
+
+}
 @media all and (max-width: 320px){
+
+}
+@media all and (max-width: 600px){
 
 }
