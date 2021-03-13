@@ -112,7 +112,7 @@ body {
 	display: flex;
 }
 .wrapper .icon a{
-	color: #4fb0d0;
+	color: #0f6f94;
 	text-decoration: none;
 }
 .wrapper .icon a i{
@@ -146,7 +146,7 @@ body {
 	color: #fff;
 }
 .dark-mode .wrapper .avatar img{
-	border: 5px solid #b86060;
+	border: 5px solid #ff8485;
 }
 .dark-mode .wrapper .footer a{
 	border: 2px solid #b4b4b4; 
