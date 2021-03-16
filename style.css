@@ -135,6 +135,21 @@ body {
 	border:  none;
 	display: flex;
 }
+.smalltab .wrapper {
+	transform: scale(0.8, 0.8);
+}
+.smalltab .wrapper .mode .more i{
+	transform: rotate(180deg);
+}
+.smalltab .wrappertab{
+	background-color: rgba(255,255,255,0.6671043417366946);
+	width: 500px;
+	height: 450px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 20px #575757;
+  	-webkit-transition: all .2s linear 0s;
+  	transition: all .2s linear 0s;	
+}
 .dark-mode {
   	-webkit-transition: all .3s linear 0s;
   	transition: all .3s linear 0s;
@@ -145,6 +160,9 @@ body {
 	background-image: linear-gradient(-45deg, #0f205d,#00544e, #6f2546,#57015b);
 }
 .dark-mode .wrapper {
+	background-color: rgba(47,47,47,0.6312292358803987);
+}
+.dark-mode .wrappertab {
 	background-color: rgba(47,47,47,0.6312292358803987);
 }
 .dark-mode .wrapper .mode i{
@@ -178,57 +196,7 @@ body {
 }
 .dark-mode .wrapper .icon a{
 	color: #c65555;
-}
-.smalltab .wrapper {
-		width: 300px;
-		height: 400px;
-	}
-.smalltab .wrapper .mode i{
-		font-size: 120%;
-		margin-top:40px;
-		margin-left: 270px;
-	}
-.smalltab	.wrapper .mode .more i{
-		margin-top: 10px;
-		font-size: 150%;
-	}
-.smalltab	.wrapper .footer a{
-		font-size: 90%;
-	}
-.smalltab	.wrapper .icon a i{
-		font-size: 150%;
-		margin: 25px 20px 0px;
-	}
-.smalltab	.wrapper .avatar{
-		margin: 10px;
-		display: flex;
-		justify-content: center;
-	}
-.smalltab	.wrapper .avatar img{
-		width: 100px;
-		border: 5px solid #aecdf1;
-		border-radius: 50px;
-	}
-.smalltab	.wrapper .info{
-		margin: 10px;
-		font-size: 100%;
-	}
-.smalltab	.wrapper .info .name{
-		margin-top: 10px;
-		font-size: 200%;
-	}
-.smalltab	.wrapper .info .full-name{
-		margin-bottom: 20px;
-	}
-.smalltab	.wrapper .info .date{
-		margin-bottom: 10px;
-	}
-.smalltab	.wrapper .info .job{
-		margin-bottom: 10px;
-	}
-.smalltab	.wrapper .info .location{
-		margin-bottom: 10px;
-	}
+}	
 @media all and (max-width: 280px){
 
 }
@@ -283,7 +251,16 @@ body {
 	.wrapper .info .location{
 		margin-bottom: 10px;
 	}
-}
-@media all and (max-width: 768px){
-
+	.smalltab{
+		display: table-cell;
+    	vertical-align: middle;
+    	margin-bottom: 100px;
+	}
+	.smalltab .wrappertab{
+		width: 300px;
+		height: 400px;
+	}
+	.smalltab .wrapper {
+		transform: scale(1);
+	}
 }
